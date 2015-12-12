@@ -3,18 +3,18 @@ require "investment"
 
 describe Investment do
   it "has a return rate" do 
-	subject.return_rate.should == 0.1 #basic expectation rather than assertions
+	return_rate.should == 0.1 #basic expectation rather than assertions
         #expect return_rate.to be 0.1
   end
 
   it "has a risk" do 
-	subject.risk.should == 0.02
+	risk.should == 0.02
 	#expect risk_rate.to be 0.02
   end	
 
   it 'is invalid without a name' do
   	pending 
-	subject.should_not be_valid #This one calls the valid() on Active Records Instances, Not stand alone classes
+	should_not be_valid #This one calls the valid() on Active Records Instances, Not stand alone classes
   end 	
 
   it "can calculate accumulated value after 10 years"
