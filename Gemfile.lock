@@ -24,4 +24,4 @@ PLATFORMS
 
 DEPENDENCIES
   finance
-  rspec
+  rspec (~> 3.0)
